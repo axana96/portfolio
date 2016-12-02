@@ -4,6 +4,7 @@ body {
 
 #header{
       overflow: hidden;
+      width: 100%;
 }
 
 .pure-g {
@@ -37,6 +38,11 @@ p {
       line-height: 1.6em;
 }
 
+.sidebar{
+      margin-left: 2em;
+      padding-top: 4.5em;
+}
+
 #portret{
       border-radius: 100%;
       width: 50%;
@@ -60,7 +66,6 @@ p {
 }
 
 .content{
-      width: 70%;
       margin: 0 auto;
 }
 
@@ -72,7 +77,12 @@ p {
 .content img{
       display: block;
       margin: 0px auto;
-      width: 30%;
+      width: 100%;
+      transition: all .2s ease-in-out;
+}
+
+.content img:active{
+      transform: scale(1.5);
 }
 
 .footer{
@@ -83,15 +93,4 @@ p {
 
 .footer p{
       text-align: center;
-}
-
-@media (max-width: 48em) {
-      li a {
-            color: red;
-      }
-
-      li {
-            display: inline;
-            margin-right: 10px;
-      }
 }
