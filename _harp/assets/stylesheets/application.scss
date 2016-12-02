@@ -1,12 +1,12 @@
 body {
-      font-family: helvetica, sans-serif;
+      font-family: 'Roboto', sans-serif;
 }
+
 #header{
-  overflow: hidden;
+      overflow: hidden;
 }
 
 .pure-g {
-
 }
 
 .pure-u-1 {
@@ -37,14 +37,52 @@ p {
       line-height: 1.6em;
 }
 
-ul {
-      list-style-type: none;
-      padding: 0;
+#portret{
+      border-radius: 100%;
+      width: 50%;
+}
+
+#voorstelling::after{
+      display: block;
+      content: "";
+      margin: 3em auto 0;
+      width: 10em;
+      border-bottom: 1px solid lightpink;
+}
+
+#overMij p{
+      margin-top: 3em;
+}
+
+#overMij h3{
+      color: palevioletred;
+      margin-top: 3em;
 }
 
 .content{
       width: 70%;
       margin: 0 auto;
+}
+
+.content h3{
+      padding: 3em 0 1em 0;
+      color: palevioletred;
+}
+
+.content img{
+      display: block;
+      margin: 0px auto;
+      width: 30%;
+}
+
+.footer{
+      background-color: lightpink;
+      color: white;
+      height: 80px;
+}
+
+.footer p{
+      text-align: center;
 }
 
 @media (max-width: 48em) {
